@@ -14,7 +14,7 @@ else:
 #while true, loop initialization
 while True:
   if((bigger % num2 == 0) and (bigger % num1 ==0)):
-#if BIGGER is both devisible by both input numbers without a remainder, assign LCM as the value of BIGGER
+#if BIGGER is divisible by both input numbers without a remainder, assign LCM as the value of BIGGER
     lcm = bigger
 #break out of loop
     break
