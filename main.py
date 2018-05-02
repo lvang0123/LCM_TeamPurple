@@ -1,3 +1,7 @@
+#Python Team Project - Least Common Multiple 
+#This program will prompt the user for two number inputs. The program will then try to find the least common multiple for those two numbers.
+#May 1, 2018 - Ben, Dan, Kyle, Lisa, and Lia all worked on this program together during class time.
+
 num1 = int(input("Enter number 1: "))
 num2 = int(input("Enter number 2: "))
 
