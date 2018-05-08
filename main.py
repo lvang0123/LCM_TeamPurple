@@ -9,13 +9,30 @@ print()
 #Declaring variables
 rerun = "Y"
 
-#Rerunning the program if the variable 'rerun' 
+#Rerunning the program if the user inputs 'Y' at the end of the program
 while rerun.lower().upper() != "N":
+  
   #Prompting the user to input two numbers 
   print("Please enter two numbers that you want to find the least common multiple for.")
   print()
-  num1 = int(input("Number 1: "))
-  num2 = int(input("Number 2: "))
+  
+  while True:
+    try:
+      num1 = int(input("Number 1: "))
+      break
+    except ValueError:
+      print()
+      print("*** ERROR: Not an integer ***")
+      print()
+      
+  while True:
+    try:
+      num2 = int(input("Number 2: "))
+      break
+    except ValueError:
+      print()
+      print("*** ERROR: Not an integer ***")
+      print()
   
   print()
   
@@ -48,8 +65,11 @@ while rerun.lower().upper() != "N":
     
     if rerun.lower().upper() == "Y":
       print()
+      print('---------------------------------------')
+      print()
       break
     elif rerun.lower().upper() == "N":
+      print()
       break
     else:
       print()
@@ -57,5 +77,4 @@ while rerun.lower().upper() != "N":
       print()
 
 #Informing the user that the program has ended
-print()
 print("Thank you for using the Least Common Multiple program!")
